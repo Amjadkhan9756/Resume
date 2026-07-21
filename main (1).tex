@@ -1,0 +1,172 @@
+\documentclass[10.5pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=0.45in,bottom=0.45in,left=0.55in,right=0.55in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+
+% ---------- Colors ----------
+\definecolor{primary}{HTML}{16324F}
+\definecolor{secondary}{HTML}{2E6FAA}
+\definecolor{accent}{HTML}{5B7FA6}
+\definecolor{textgray}{HTML}{3D3D3D}
+\definecolor{rulegray}{HTML}{C9D3DC}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=secondary,
+    linkcolor=secondary
+}
+
+% ---------- Page setup ----------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\color{textgray}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---------- Section style ----------
+\titleformat{\section}
+  {\normalsize\bfseries\color{primary}}
+  {}
+  {0pt}
+  {}
+  [{\color{rulegray}\titlerule[1.1pt]}]
+
+\titlespacing{\section}{0pt}{9pt}{5pt}
+
+\setlist[itemize]{
+  leftmargin=13pt,
+  itemsep=1.5pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt,
+  label=\textbullet
+}
+
+% ---------- Helper commands ----------
+\newcommand{\role}[2]{%
+  {\bfseries\color{primary} #1} \hfill {\bfseries\small #2}%
+}
+\newcommand{\subrole}[2]{%
+  \textit{#1} \hfill \textit{\small #2}%
+}
+\newcommand{\projectline}[2]{%
+  {\bfseries\color{primary} #1} \hfill {\small\color{secondary} #2}%
+}
+
+\begin{document}
+
+%========================================================
+% Header
+%========================================================
+\begin{center}
+  {\fontsize{26}{28}\selectfont\bfseries\color{primary} AMJAD KHAN }\\[3pt]
+  {\color{secondary}\large  Full Stack Developer}\\[5pt]
+  {\small
+    \href{mailto:amjadkhann.tech@gmail.com}{amjadkhann.tech@gmail.com}
+    \quad\textbf{\textbullet}\quad
+    +91-9756859054
+    \quad\textbf{\textbullet}\quad
+    \href{https://www.linkedin.com/in/amjad-khan-209363320}{linkedin.com/in/amjad-khan-209363320}
+    % \quad\textbf{\textbullet}\quad
+    % \href{https://github.com/Amjadkhan9756}{github.com/Amjadkhan9756}
+    \quad\textbf{\textbullet}\quad
+    \href{https://leetcode.com/u/mohd_a123/}{leetcode.com/u/amjad\_khan}
+  }
+\end{center}
+
+\vspace{2pt}
+{\color{secondary}\rule{\linewidth}{1.3pt}}
+\vspace{2pt}
+
+%========================================================
+% Summary
+%========================================================
+\section{SUMMARY}
+\textbf{Full Stack Developer} specializing in the \textbf{MERN stack} with hands-on experience building responsive, scalable web applications using \textbf{React.js}, \textbf{Next.js}, \textbf{TypeScript}, \textbf{Node.js}, \textbf{Express.js}, and \textbf{MongoDB}. Proficient in designing \textbf{RESTful APIs}, implementing secure \textbf{JWT authentication}, managing application state with \textbf{Redux Toolkit}, and developing clean, maintainable, high-performance solutions.
+
+%========================================================
+% Skills
+%========================================================
+\section{SKILLS}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{primary}}l X@{}}
+Languages         & \textbf{JavaScript}, \textbf{TypeScript}, Java \\[2pt]
+Problem Solving   & \textbf{Data Structures \& Algorithms (DSA)}  \\[2pt]
+Primary Skills    & \textbf{React.js}, \textbf{Node.js}, \textbf{Express.js}, \textbf{MongoDB}, Redux, Tailwind CSS, Bootstrap 5, Material UI, HTML, CSS, \textbf{MERN}, \textbf{REST APIs}, Git, GitHub \\[2pt]
+Secondary Skills  &   \textbf{Next.js}, \textbf{PostgreSQL}, Docker, CI/CD, AWS \\
+\end{tabularx}
+
+%========================================================
+% Experience
+%========================================================
+\section{EXPERIENCE}
+
+\role{Vitsoft Solutions Pvt. Ltd.}{June 2026 -- July 2026}\\
+\subrole{MERN Stack Intern}{Bareilly, Uttar Pradesh}
+\begin{itemize}
+    \item Developing full-stack web applications using the \textbf{MERN stack} (\textbf{MongoDB}, \textbf{Express.js}, \textbf{React.js}, and \textbf{Node.js}).
+    \item Building responsive \textbf{React.js} user interfaces and integrating \textbf{RESTful APIs} for seamless frontend-backend communication.
+    \item Built backend services with \textbf{Express.js} and \textbf{MongoDB}, implementing \textbf{CRUD operations}, \textbf{authentication}, and secure \textbf{API endpoints}.
+
+   
+    
+\end{itemize}
+%========================================================
+% Projects
+%========================================================
+\section{PROJECTS}
+
+\projectline{SocialMediaSite --- Modern Social Blog Platform}{\href{https://github.com/Amjadkhan9756/Postblog}{View Repository}}\\
+{\small\textit{Next.js 15 \;\textbullet\; React 19 \;\textbullet\; Redux Toolkit \;\textbullet\; Bootstrap 5 \;\textbullet\; Node.js \;\textbullet\; Express 5 \;\textbullet\; MongoDB \;\textbullet\; Multer \;\textbullet\; Bcrypt}}
+\begin{itemize}
+  \item Developed a full-stack social networking platform with \textbf{Next.js 15} and \textbf{Express 5}, supporting user profiles, education and work history tracking, and a \textbf{connection-request system} for mutual networking.
+  \item Implemented secure authentication using \textbf{Bcrypt} password hashing and \textbf{session management}, and built a \textbf{Multer}-based media pipeline for profile pictures and post uploads.
+  \item Designed a \textbf{normalized MongoDB schema} and \textbf{RESTful API layer} to support scalable content and user relationship management across the platform.
+  \item Built \textbf{admin-only utilities} for automated database seeding and cleanup, streamlining testing and QA workflows during development.
+  \item Managed application state with \textbf{Redux Toolkit} for predictable, centralized data flow across the client, and styled a responsive UI with \textbf{Bootstrap 5}.
+\end{itemize}
+
+% \vspace{3pt}
+% \projectline{foodDeliverySite --- Food Delivery Platform}{\href{https://github.com/Amjadkhan9756/foodDeliverySite}{View Repository}}\\
+% {\small\textit{TypeScript \;\textbullet\; React 19 \;\textbullet\; Redux Toolkit \;\textbullet\; Tailwind \;\textbullet\; Node.js \;\textbullet\; Express 5 \;\textbullet\; MongoDB \;\textbullet\; Multer \;\textbullet\; Bcrypt}}
+% \begin{itemize}
+%   \item Developed a full-stack food delivery platform using the MERN stack, delivering a complete online food-ordering experience.
+%   \item Designed and implemented RESTful APIs for authentication, food management, and cart operations; implemented JWT-based authentication and role-based authorization to secure user accounts.
+%   \item Integrated live location tracking using browser geolocation and map services, enabling users to share their current location for accurate delivery.
+% \end{itemize}
+
+%========================================================
+% Education
+%========================================================
+\section{EDUCATION}
+
+\role{B.Tech in Computer Science \& Engineering}{Expected 2027}\\
+{\small Shri Ram Murti Smarak College of Engineering \& Technology, Bareilly}
+
+
+%========================================================
+% Achievements
+%========================================================
+\section{TECHNICAL ACHIEVEMENTS}
+\begin{itemize}
+    \item Solved \textbf{150+ data structures and algorithms problems} on \textbf{LeetCode}, strengthening problem-solving and algorithmic thinking skills.
+    \item Maintained a \textbf{consistent LeetCode practice streak}, improving coding proficiency and optimizing algorithm efficiency.
+\end{itemize}
+
+
+%========================================================
+% Certifications
+%========================================================
+
+\section{CERTIFICATIONS}
+\begin{itemize}
+  \item \textbf{MERN Stack Development} --- Completion Certification \hfill \href{https://github.com/Amjadkhan9756/certification/blob/main/MERN.png}{\small View Certificate}
+  \item \textbf{MERN Stack Advanced Training}  ---Vitsoft Solutions Pvt. Ltd. \hfill \href{ }{\small View Certificate}
+\end{itemize}
+
+\end{document}
